@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.image-block {
+    width: 100%;
+}
+
+.light {
+    position: absolute;
+    top: 37%;
+    left: 62%;
+    width: 55px;
+    transform: rotate3d(11, 9, 4, 60deg);
+    z-index: 1;
+}
+
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    background-image: url(../images/360_F_251213671_xl00htD5OEi3kPB6fgHon0gSmptclmpY\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.raod-img {
+    position: relative;
+}
+
+#car {
+    width: 238px;
+    position: absolute;
+    top: -114px;
+}
+
+
+#car2 {
+    width: 126px;
+    position: absolute;
+    right: 52%;
+    z-index: 1;
+    bottom: 0;
+}
+
+#carBrown {
+    width: 238px;
+    position: absolute;
+    top: -25px;
+}
+
+#policeCar {
+    width: 118px;
+    position: absolute;
+    right: 41%;
+    top: -25px;
+}
+
+.car {
+    animation: forward 3s linear infinite;
+}
+
+.car2 {
+    animation: upward 3s linear infinite;
+}
+
+.carBrown {
+    animation: forwardLeft 3s linear infinite;
+}
+
+.policeCar {
+    animation: downward 3s linear infinite;
+}
+
+@keyframes forward {
+    0% {
+        transform: translateX(-50px);
+    }
+
+    100% {
+        transform: translateX(1600px);
+    }
+}
+
+@keyframes forwardLeft {
+    0% {
+        transform: translateX(1600px);
+    }
+
+    100% {
+        transform: translateX(-50px);
+    }
+}
+
+@keyframes upward {
+
+    100% {
+        transform: translateY(-1000px);
+    }
+}
+
+@keyframes downward {
+
+    100% {
+        transform: translateY(700px);
+    }
+}
+
+.light2 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 41px;
+    z-index: 1;
+}
+
+.signal {
+    position: absolute;
+    top: 37%;
+    left: 37%;
+    width: 50px;
+    z-index: 1;
+    transform: rotate3d(10, -9, -3, 60deg);
+}
+
+.signal2 {
+    position: absolute;
+    top: 63%;
+    left: 49.5%;
+    width: 50px;
+    z-index: 1;
+    transform: rotate3d(19, 9, 4, 60deg);
+    /* top: 69%; */
+    /* transform: rotate3d(13, 1, 1, 105deg); */
+}
