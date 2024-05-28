@@ -15,20 +15,20 @@ function updateImage() {
     signal2.src = trafficLights2[i];
     i = (i + 1) % images.length;
 
-    if (image.src == "http://127.0.0.1:5500/assets/images/red_light.svg") {
+    if ((image.src.endsWith("assets/images/red_light.svg"))) {
         stopCar();
     }
 
-    if (image.src == "http://127.0.0.1:5500/assets/images/green_light.svg") {
+    if ((image.src.endsWith("assets/images/green_light.svg"))) {
         startAnimation()
     }
-    else if (image2.src == "http://127.0.0.1:5500/assets/images/green_light.svg") {
+    else if ((image2.src.endsWith("assets/images/green_light.svg"))) {
         startAnimation1()
     }
-    else if (signal.src == "http://127.0.0.1:5500/assets/images/green_light.svg") {
+    else if ((signal.src.endsWith("assets/images/green_light.svg"))) {
         startAnimation3()
     }
-    else if (signal2.src == "http://127.0.0.1:5500/assets/images/green_light.svg") {
+    else if ((signal2.src.endsWith("assets/images/green_light.svg"))) {
         startAnimation2()
     }
 };
